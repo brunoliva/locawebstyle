@@ -45,6 +45,15 @@ type: component
   </div>
   <% code("html") do %><%= partial 'documentacao/shared/abas' %><% end %>
 
+  <h2 class="doc-title-3">Navegação de Abas e dropdown</h2>
+  <p>Navegação por abas e com o módulo de dropdown.</p>
+
+  <div class="ls-box-demo">
+    <%= partial 'documentacao/shared/abas', :locals => {:dropdown => true, :id => '_new'} %>
+  </div>
+  <% code("html") do %><%= partial 'documentacao/shared/abas', :locals => {:dropdown => true, :id => '_new'} %><% end %>
+
+
   <div class="ls-box ls-box-gray">
     <h2 class="doc-title-4">Acessibilidade</h2>
     <p>Via javascript é adicionada as ARIAs abaixo:</p>

@@ -1,4 +1,4 @@
-.ls-tabs-nav:not(.in-dropdown)
+.ls-tabs-nav
   position: relative
   z-index: 2
   margin: 0
@@ -18,6 +18,23 @@
       color: #fff
       display: inline-block
       padding: 11px
+
+    [class*="ls-btn"]
+      &:empty:after
+        margin-left: 0
+
+      &:after
+        content: ""
+        +arrow-down($gray4, 5px)
+        display: inline-block
+        width: 0
+        height: 0
+        margin-left: 14px
+        position: relative
+        top: 4px
+
+      &.ls-btn-lg:after
+        top: 2px
 
     &.ls-active
       border-color: $gray1

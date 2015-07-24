@@ -106,6 +106,18 @@
       a
         font-size: remtopx(.875)
 
+.ls-tabs-nav
+  .ls-dropdown-tabs
+    border: none
+
+    &:hover,
+      a
+        color: #000 !important
+        &.ls-btn
+          color: #000 !important
+          &:after
+            border-color: #fff transparent transparent transparent
+
 // Dealing with differences in the arrow used in dropdown buttons
 [class*="ls-btn-"]
   &[data-ls-module]:after
